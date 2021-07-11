@@ -167,7 +167,7 @@ startButton.addEventListener('click', () => {
   webcamVideo.srcObject = localStream;
   remoteVideo.srcObject = remoteStream;
 
-  startButton.disabled = true;
+  startButton.disabled = false;
 });
 
 if ((navigator.mediaDevices && 'getDisplayMedia' in navigator.mediaDevices)) {
